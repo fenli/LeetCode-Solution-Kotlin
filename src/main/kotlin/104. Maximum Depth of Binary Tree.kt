@@ -15,18 +15,14 @@ class Solution104 {
 }
 
 fun main() {
-    fun List<Int?>.toTreeNode(index: Int, depth: Int): Solution104.TreeNode? {
+    fun List<Int?>.toTreeNode(index: Int = 0): Solution104.TreeNode? {
         if (index >= size) return null
         if (get(index) == null) return null
 
-        return Solution104.TreeNode(
-            get(index)!!,
-            toTreeNode(index * depth + 1, depth + 1),
-            toTreeNode(index * depth + 2, depth + 1)
-        )
+        return Solution104.TreeNode(get(index)!!, toTreeNode(index * 2 + 1), toTreeNode(index * 2 + 2))
     }
 
     val solution = Solution104()
-    check(solution.maxDepth(listOf(3, 9, 20, null, null, 15, 7).toTreeNode(0, 1)) == 3)
-    check(solution.maxDepth(listOf(1, null, 2).toTreeNode(0, 1)) == 2)
+    check(solution.maxDepth(listOf(3, 9, 20, null, null, 15, 7).toTreeNode()) == 3)
+    check(solution.maxDepth(listOf(1, null, 2).toTreeNode()) == 2)
 }
