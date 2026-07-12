@@ -1,5 +1,7 @@
 package p0209_minimum_size_subarray_sum
 
+import kotlin.math.min
+
 // [2,3,1,2,4,3]
 // 2 3 1 2
 //   3 1 2 4

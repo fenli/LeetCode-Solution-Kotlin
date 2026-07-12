@@ -1,5 +1,7 @@
 package p0011_container_with_most_water
 
+import kotlin.math.min
+
 class Solution {
 
     // O(n^2)

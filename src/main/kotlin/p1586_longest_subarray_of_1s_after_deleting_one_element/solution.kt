@@ -1,5 +1,7 @@
 package p1586_longest_subarray_of_1s_after_deleting_one_element
 
+import kotlin.math.max
+
 class Solution {
     fun longestSubarray(nums: IntArray): Int {
         val k = 1

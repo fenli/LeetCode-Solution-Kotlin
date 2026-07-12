@@ -1,5 +1,7 @@
 package p0806_domino_and_tromino_tiling
 
+import kotlin.math.max
+
 class Solution {
     // f(n) = 2 * f(n-1) + f(n - 3)
     fun numTilings(n: Int): Int {

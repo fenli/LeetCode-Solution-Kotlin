@@ -1,5 +1,7 @@
 package p0150_evaluate_reverse_polish_notation
 
+import java.util.Stack
+
 class Solution {
     private val stack = Stack<Int>()
 

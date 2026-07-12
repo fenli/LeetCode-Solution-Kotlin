@@ -1,5 +1,7 @@
 package p0155_min_stack
 
+import java.util.Stack
+
 class MinStack() {
 
     private val stack = Stack<Int>()

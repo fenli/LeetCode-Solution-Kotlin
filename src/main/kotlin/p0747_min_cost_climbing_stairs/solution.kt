@@ -1,5 +1,7 @@
 package p0747_min_cost_climbing_stairs
 
+import kotlin.math.min
+
 class Solution {
     fun minCostClimbingStairs(cost: IntArray): Int {
         var first = cost[0]

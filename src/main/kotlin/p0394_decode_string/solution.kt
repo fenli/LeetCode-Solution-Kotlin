@@ -1,5 +1,7 @@
 package p0394_decode_string
 
+import java.util.Stack
+
 class Solution {
     fun decodeString(s: String): String {
         val stack = Stack<Any>()

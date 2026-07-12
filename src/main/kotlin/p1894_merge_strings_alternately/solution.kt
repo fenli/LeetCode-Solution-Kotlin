@@ -1,5 +1,7 @@
 package p1894_merge_strings_alternately
 
+import kotlin.math.max
+
 class Solution {
     fun mergeAlternately(word1: String, word2: String): String {
         return buildString {

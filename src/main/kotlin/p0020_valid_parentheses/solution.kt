@@ -1,5 +1,7 @@
 package p0020_valid_parentheses
 
+import java.util.Stack
+
 class Solution {
     fun isValid(s: String): Boolean {
         val stack = Stack<Char>()

@@ -1,5 +1,7 @@
 package p1046_max_consecutive_ones_iii
 
+import kotlin.math.max
+
 class Solution {
     fun longestOnes(nums: IntArray, k: Int): Int {
         var maxOne = 0

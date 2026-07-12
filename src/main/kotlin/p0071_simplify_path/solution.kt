@@ -1,5 +1,7 @@
 package p0071_simplify_path
 
+import java.util.Stack
+
 class Solution {
     fun simplifyPath(path: String): String {
         val canonical = Stack<String>()

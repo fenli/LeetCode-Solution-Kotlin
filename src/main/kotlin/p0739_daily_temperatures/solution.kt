@@ -1,5 +1,7 @@
 package p0739_daily_temperatures
 
+import java.util.Stack
+
 class Solution {
     fun dailyTemperatures(temperatures: IntArray): IntArray {
         val stackOfIdx = Stack<Int>()

@@ -1,5 +1,7 @@
 package p0937_online_stock_span
 
+import java.util.Stack
+
 class StockSpanner() {
 
     private val stack = Stack<Pair<Int, Int>>()

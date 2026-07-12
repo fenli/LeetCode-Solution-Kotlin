@@ -1,5 +1,7 @@
 package p1570_final_prices_with_a_special_discount_in_a_shop
 
+import java.util.Stack
+
 class Solution {
     fun finalPrices(prices: IntArray): IntArray {
         if (prices.size == 1) return intArrayOf(prices[0])

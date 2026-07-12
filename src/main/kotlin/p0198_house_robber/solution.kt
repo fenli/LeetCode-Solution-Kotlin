@@ -1,5 +1,7 @@
 package p0198_house_robber
 
+import kotlin.math.max
+
 // Input =   [2,1,1,2]
 // newRob = 0 2 1 3 4
 // NoRob  = 0 0 2 2 3
