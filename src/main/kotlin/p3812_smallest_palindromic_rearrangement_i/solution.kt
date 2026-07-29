@@ -1,5 +1,7 @@
 package p3812_smallest_palindromic_rearrangement_i
 
+import java.util.PriorityQueue
+
 class Solution {
     fun smallestPalindrome(s: String): String {
         if (s.length <= 3) return s

@@ -1,5 +1,7 @@
 package p1397_search_suggestions_system
 
+import java.util.PriorityQueue
+
 class Trie() {
 
     class Node() {

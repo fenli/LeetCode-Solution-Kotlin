@@ -1,5 +1,7 @@
 package p1159_smallest_subsequence_of_distinct_characters
 
+import java.util.Stack
+
 class Solution {
     fun smallestSubsequence(s: String): String {
         val lastIndex = mutableMapOf<Char, Int>()
