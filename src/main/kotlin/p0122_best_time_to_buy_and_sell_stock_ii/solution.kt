@@ -11,16 +11,13 @@ class Solution {
             val profit = prices[i] - prices[buyIndex]
             if (profit > maxSessionProfit) {
                 maxSessionProfit = profit
-
-                if (prices[i] < prices[buyIndex]) buyIndex = i
-            } else {
-                totalProfit += maxSessionProfit
-                maxSessionProfit = 0
-                buyIndex = i
+                if (i != prices.size - 1) continue
             }
-        }
 
-        totalProfit += maxSessionProfit
+            totalProfit += maxSessionProfit
+            maxSessionProfit = 0
+            buyIndex = i
+        }
         
         return totalProfit
     }
