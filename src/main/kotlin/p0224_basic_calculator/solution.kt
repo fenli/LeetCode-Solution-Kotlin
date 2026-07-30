@@ -1,11 +1,9 @@
 package p0224_basic_calculator
 
-import java.util.Stack
-
 class Solution {
     
     fun calculate(s: String): Int {
-        val rpn = arrayListOf<String>()
+        val rpn = mutableListOf<String>()
         val ops = Stack<Char>()
         var number = ""
 
@@ -67,10 +65,10 @@ class Solution {
 
         // println("RPN: " + rpn.toString())
 
-        return evalRPN(rpn.toTypedArray())
+        return evalRPN(rpn)
     }
 
-    fun evalRPN(tokens: Array<String>): Int {
+    fun evalRPN(tokens: List<String>): Int {
         val stack = Stack<Long>()
         for (t in tokens) {
             when(t) {
