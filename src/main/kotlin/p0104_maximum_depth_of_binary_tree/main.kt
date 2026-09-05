@@ -1,5 +1,7 @@
 package p0104_maximum_depth_of_binary_tree
 
+import utils.TreeNode
+
 fun main() {
     fun List<Int?>.toTreeNode(index: Int = 0): TreeNode? {
         if (index >= size) return null

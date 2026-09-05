@@ -1,5 +1,7 @@
 package p0226_invert_binary_tree
 
+import utils.TreeNode
+
 /**
  * Example:
  * var ti = TreeNode(5)

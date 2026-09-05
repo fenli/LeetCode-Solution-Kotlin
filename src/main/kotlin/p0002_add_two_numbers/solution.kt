@@ -1,5 +1,7 @@
 package p0002_add_two_numbers
 
+import utils.ListNode
+
 /**
  * Example:
  * var li = ListNode(5)

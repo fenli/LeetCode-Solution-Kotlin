@@ -1,5 +1,7 @@
 package p4378_nearest_available_drone
 
+import kotlin.math.abs
+
 class Solution {
     fun nearestDrone(drones: Array<IntArray>, target: IntArray): Int {
         var minIdx = -1

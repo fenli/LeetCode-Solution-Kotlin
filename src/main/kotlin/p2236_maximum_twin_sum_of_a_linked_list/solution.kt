@@ -1,5 +1,7 @@
 package p2236_maximum_twin_sum_of_a_linked_list
 
+import utils.ListNode
+
 /**
  * Example:
  * var li = ListNode(5)

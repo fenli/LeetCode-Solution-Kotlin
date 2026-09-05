@@ -1,5 +1,7 @@
 package p0904_leafsimilar_trees
 
+import utils.TreeNode
+
 /**
  * Example:
  * var ti = TreeNode(5)

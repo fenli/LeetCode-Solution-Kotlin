@@ -1,5 +1,7 @@
 package p0100_same_tree
 
+import utils.TreeNode
+
 /**
  * Example:
  * var ti = TreeNode(5)

@@ -1,5 +1,7 @@
 package p0206_reverse_linked_list
 
+import utils.ListNode
+
 /**
  * Example:
  * var li = ListNode(5)

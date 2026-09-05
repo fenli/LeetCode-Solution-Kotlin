@@ -1,5 +1,7 @@
 package p0783_search_in_a_binary_search_tree
 
+import utils.TreeNode
+
 /**
  * Example:
  * var ti = TreeNode(5)

@@ -1,5 +1,7 @@
 package p0021_merge_two_sorted_lists
 
+import utils.ListNode
+
 /**
  * Example:
  * var li = ListNode(5)

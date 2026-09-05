@@ -1,5 +1,7 @@
 package p2182_find_the_minimum_and_maximum_number_of_nodes_between_critical_points
 
+import utils.ListNode
+
 /**
  * Example:
  * var li = ListNode(5)
@@ -20,7 +22,7 @@ class Solution {
         var minDist = Int.MAX_VALUE
 
         while (cur?.next != null) {
-            val next = cur.next
+            val next = cur.next!!
 
             val isMax = cur.`val` > prev!!.`val` && cur.`val` > next.`val`
             val isMin = cur.`val` < prev.`val` && cur.`val` < next.`val`
