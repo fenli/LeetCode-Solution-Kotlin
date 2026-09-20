@@ -5,8 +5,8 @@ class Solution {
         var p = 0
         var i = 1
         for (c in s) {
-            val ir = 27 - (c - 'a' + 1)
-            p += i*ir
+            val ir = 'z' - c + 1
+            p += i * ir
             i++
         }
         return p
