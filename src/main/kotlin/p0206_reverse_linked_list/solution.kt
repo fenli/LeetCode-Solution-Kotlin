@@ -1,7 +1,5 @@
 package p0206_reverse_linked_list
 
-import utils.ListNode
-
 /**
  * Example:
  * var li = ListNode(5)
@@ -13,17 +11,16 @@ import utils.ListNode
  */
 class Solution {
     fun reverseList(head: ListNode?): ListNode? {
-        var reversed: ListNode? = null
+        var prev: ListNode? = null
         var current = head
 
         while(current != null) {
-            val temp = reversed
-            reversed = ListNode(current.`val`)
-            reversed.next = temp
-            
-            current = current.next
+            val nextNode = current.next
+            current.next = prev
+            prev = current
+            current = nextNode
         }
 
-        return reversed
+        return prev
     }
 }
